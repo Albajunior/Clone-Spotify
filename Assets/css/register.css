@@ -1,0 +1,154 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#bg {
+  background-color: #000;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover !important;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+#logginContainer * {
+  color: #fff;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  box-sizing: border-box;
+}
+
+#logginContainer {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1024px;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #a0a0a0;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a0a0a0;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a0a0a0;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #a0a0a0;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #a0a0a0;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #a0a0a0;
+}
+
+#inputContainer {
+  width: 400px;
+  padding: 45px;
+  border-right: 1px solid #999;
+  float: left;
+}
+
+#inputContainer h2 {
+  text-align: center;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="password"],
+#inputContainer input[type="email"] {
+  display: block;
+  background-color: transparent !important;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  height: 27px;
+  line-height: 27px;
+  width: 100%;
+}
+
+#inputContainer label {
+  color: #fff;
+  font-size: 13px;
+  display: block;
+  margin: 15px 0 10px 0;
+}
+
+#inputContainer button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 250px;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  height: 41px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#hideRegister,
+#hideLogIn {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#hideRegister:hover,
+#hideLogIn:hover {
+  color: #f48c06;
+}
+.hasAccountText {
+  text-align: center;
+  cursor: pointer;
+}
+
+#registerForm {
+  display: none;
+}
+#logingText {
+  padding: 40px;
+  display: table-cell;
+}
+
+#logingText h1 {
+  color: #07d159;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#logingText h2 {
+  margin: 35px 0;
+}
+#logingText ul {
+  padding: 0;
+}
+
+#logingText li {
+  font-size: 20px;
+  list-style-type: none;
+  padding: 10px;
+}
+.icon {
+  margin-right: 5px;
+  background-color: #07d159;
+}
+
+#inputContainer .errorMessage {
+  display: block;
+  color: #a30000;
+  font-size: 12px;
+}
